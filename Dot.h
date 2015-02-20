@@ -24,6 +24,9 @@ public:
     float r;
     float vF;
     float vR;
+    
+    int tailLength;
+    
     void setup();
     void update();
     void draw();
