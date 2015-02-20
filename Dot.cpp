@@ -11,7 +11,7 @@
 
 
 void Dot::setup(){
-    tailLength = ofRandom(32)+8;
+    tailLength = ofRandom(128)+16;
     p.set(ofGetWidth()/2,ofGetHeight()/2);
     
     r = ofRandom(TWO_PI);
@@ -42,6 +42,8 @@ void Dot::draw(){
     ofFill();
     ofSetColor(0);
     ofCircle(p,3.0f*vF);
+    ofEnableAlphaBlending();
+    ofSetColor(128,128,128,128*vF);
     ofBeginShape();
     ofNoFill();
     for(int i=0; i<tailLength; i++){
@@ -60,6 +62,6 @@ void Dot::draw(){
     
     ofFill();
     ofSetColor(0);
-    ofCircle(tail.at(tailLength-1),2.0f*vF);
+    ofCircle(tail.at(tailLength-1),1.0f*vF);
 
 }
