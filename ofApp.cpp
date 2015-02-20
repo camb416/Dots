@@ -1,6 +1,6 @@
 #include "ofApp.h"
 
-#define NUM_DOTS 2048
+#define NUM_DOTS 4096
 
 //--------------------------------------------------------------
 void ofApp::setup(){

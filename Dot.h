@@ -24,6 +24,7 @@ public:
     float r;
     float vF;
     float vR;
+    float aR;
     
     int tailLength;
     
